@@ -1,0 +1,535 @@
+<!DOCTYPE html><html lang="es"><head><script>
+// templated by golang 
+function __setCMPv2RequestData() {
+    window._CMPv2RequestData = {
+	    "language": "en",
+	    "stylingLogo": "//g.ezodn.com/utilcave_com/middleton/img.webp?dirname=loonapix_com&amp;img=/logo/loonapix_com"
+    };
+}
+__setCMPv2RequestData();
+
+var gtagLoadBackoff = 100;
+function gtagLoadedCheck() {
+    if(typeof gtag == 'undefined') {
+        gtagLoadBackoff += 100;
+
+        return setTimeout(function(){
+            gtagLoadedCheck();
+        }, gtagLoadBackoff);
+    } else {
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied'
+        });
+    }
+}
+
+gtagLoadedCheck();</script>
+
+<script src="https://privacy.gatekeeperconsent.com/tcf2_stub.js" data-cfasync="false"></script><script>var __ezHttpConsent={setByCat:function(src,tagType,attributes,category,force){var setScript=function(){if(force||window.ezTcfConsent[category]){var scriptElement=document.createElement(tagType);scriptElement.src=src;attributes.forEach(function(attr){for(var key in attr){if(attr.hasOwnProperty(key)){scriptElement.setAttribute(key,attr[key]);}}});var firstScript=document.getElementsByTagName(tagType)[0];firstScript.parentNode.insertBefore(scriptElement,firstScript);}};if(force||(window.ezTcfConsent&&window.ezTcfConsent.loaded)){setScript();}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){setScript();}else{console.error("cannot get ez consent data");force=true;setScript();}});}else{force=true;setScript();console.error("getEzConsentData is not a function");}},};</script>
+<script>var ezTcfConsent=window.ezTcfConsent?window.ezTcfConsent:{loaded:false,store_info:false,develop_and_improve_services:false,measure_ad_performance:false,measure_content_performance:false,select_basic_ads:false,create_ad_profile:false,select_personalized_ads:false,create_content_profile:false,select_personalized_content:false,understand_audiences:false,use_limited_data_to_select_content:false,};function getEzConsentData(){return new Promise(function(resolve){document.addEventListener("ezConsentEvent",function(event){var ezTcfConsent=event.detail.ezTcfConsent;resolve(ezTcfConsent);});});}</script>
+<script>function _setEzCookies(ezConsentData){var cookies=[{name:"ezoadgid_100839",value:"-1; Path=/; Domain=loonapix.com; Expires=Thu, 28 Mar 2024 18:21:14 UTC",tcfCategory:"understand_audiences",isEzoic:"true",},{name:"ezoref_100839",value:"bing.com; Path=/; Domain=loonapix.com; Expires=Thu, 28 Mar 2024 19:51:14 UTC",tcfCategory:"understand_audiences",isEzoic:"true",},{name:"ezosuibasgeneris-1",value:"981732c4-8968-4b04-5107-f23995ab3ad6; Path=/; Domain=loonapix.com; Expires=Fri, 28 Mar 2025 17:51:14 UTC; Secure; SameSite=None",tcfCategory:"understand_audiences",isEzoic:"true",},{name:"ezoab_100839",value:"mod16; Path=/; Domain=loonapix.com; Expires=Thu, 28 Mar 2024 19:51:14 UTC",tcfCategory:"store_info",isEzoic:"true",},{name:"active_template::100839",value:"pub_site.1711648274; Path=/; Domain=loonapix.com; Expires=Sat, 30 Mar 2024 17:51:14 UTC",tcfCategory:"store_info",isEzoic:"true",},{name:"ezopvc_100839",value:"1; Path=/; Domain=loonapix.com; Expires=Thu, 28 Mar 2024 18:21:14 UTC",tcfCategory:"understand_audiences",isEzoic:"true",},{name:"lp_100839",value:"https://www.loonapix.com/es/photo-art/; Path=/; Domain=loonapix.com; Expires=Thu, 28 Mar 2024 18:21:14 UTC",tcfCategory:"store_info",isEzoic:"true",},{name:"ezovuuidtime_100839",value:"1711648274; Path=/; Domain=loonapix.com; Expires=Sat, 30 Mar 2024 17:51:14 UTC",tcfCategory:"understand_audiences",isEzoic:"true",},{name:"ezovuuid_100839",value:"e8b56c55-5e40-4407-43e8-1dcaeca120ca; Path=/; Domain=loonapix.com; Expires=Thu, 28 Mar 2024 18:21:14 UTC",tcfCategory:"understand_audiences",isEzoic:"true",}];for(var i=0;i<cookies.length;i++){var cookie=cookies[i];if(ezConsentData&&ezConsentData.loaded&&ezConsentData[cookie.tcfCategory]){document.cookie=cookie.name+"="+cookie.value;}}}
+if(window.ezTcfConsent&&window.ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else{console.error("cannot get ez consent data");_setEzCookies(window.ezTcfConsent);}});}else{console.error("getEzConsentData is not a function");_setEzCookies(window.ezTcfConsent);}</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=false;window.__ezScriptHost="//www.ezojs.com";__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('/detroitchicago/boise.js', '/detroitchicago/boise.js?gcb=195-0&cb=5', true, [], true, false, true, false);__ez.queue.addFile('/parsonsmaize/abilene.js', '/parsonsmaize/abilene.js?gcb=195-0&cb=33', true, [], true, false, true, false);</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":1,"domain_id":100839,"ezcache_level":0,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"0f0b2cb7-4914-4b15-6b15-0d2847cf8c45","response_size_orig":31352,"response_time_orig":78,"template_id":134,"url":"https://www.loonapix.com/es/photo-art/","visit_uuid":"e8b56c55-5e40-4407-43e8-1dcaeca120ca","word_count":290,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script type="text/javascript">(function(){function storageAvailable(type){var storage;try{storage=window[type];var x='__storage_test__';storage.setItem(x,x);storage.removeItem(x);return true;}
+catch(e){return e instanceof DOMException&&(e.code===22||e.code===1014||e.name==='QuotaExceededError'||e.name==='NS_ERROR_DOM_QUOTA_REACHED')&&(storage&&storage.length!==0);}}
+function remove_ama_config(){if(storageAvailable('localStorage')){localStorage.removeItem("google_ama_config");}}
+remove_ama_config()})()</script>
+<script type="text/javascript">var ezoicTestActive = true</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod16","ad_cache_level":1,"ad_count_adjustment":0,"ad_lazyload_version":0,"ad_load_version":1,"ad_location_ids":"","adx_ad_count":0,"ai_placeholder_cache_level":1,"ai_placeholder_placement_cnt":-1,"bidder_method":1,"bidder_version":3,"city":"Vilnius","country":"LT","days_since_last_visit":-1,"display_ad_count":0,"domain_id":100839,"domain_test_group":20230808,"ds_adsize_opt_id":-1,"engaged_time_visit":0,"ezcache_level":0,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"iab_category":"","iab_category_0":"596","is_embed":false,"is_from_recommended_pages":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"max_ads":0,"metro_code":0,"optimization_version":1,"page_ad_positions":"","page_view_count":0,"page_view_id":"0f0b2cb7-4914-4b15-6b15-0d2847cf8c45","position_selection_id":0,"postal_code":"08104","pv_event_count":0,"response_size_orig":31352,"response_time_orig":78,"serverid":"i-0df59800a92e89381","state":"57","sub_page_ad_positions":"","t_epoch":1711648274,"template_id":134,"time_on_site_visit":0,"url":"https://www.loonapix.com/es/photo-art/","visit_uuid":"e8b56c55-5e40-4407-43e8-1dcaeca120ca","weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":290,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqReady');</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('/parsonsmaize/mulvane.js', '/parsonsmaize/mulvane.js?gcb=195-0&cb=6', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('/parsonsmaize/olathe.js', '/parsonsmaize/olathe.js?gcb=195-0&cb=24', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('/porpoiseant/et.js', '/porpoiseant/et.js?gcb=195-0&cb=2', false, [], true, false, true, false);!function(){var e=function(e,i,t){var o=[],n=null;return{Add:function(t,d){var a=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null;if(__ez.dot.isDefined(t)&&__ez.dot.isValid(d))if(n==t&&o.length>0&&o[o.length-1].data.length+d.length<=5)o[o.length-1].data=o[o.length-1].data.concat(__ez.dot.dataToStr(d));else{var _={type:e,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(d)};_[i]=t,a&&a.hasOwnProperty("impression_id")&&a.hasOwnProperty("ad_unit")&&(_.impression_id=a.impression_id.toString(),_.unit=a.ad_unit),o.push(_),n=t}},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(o)&&o.length>0)for(;o.length>0;){var e=5;e>o.length&&(e=o.length);var i=o.splice(0,e),n=__ez.dot.getURL(t)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(i));__ez.dot.Fire(n)}o=[]}}}};__ez.vep=e("video","video_impression_id","/detroitchicago/grapefruit.gif"),__ez.vaep=e("video-ad","video_ad_impression_id","/porpoiseant/lemon.gif"),__ez.osvaep=e("outstream-video-ad","video_ad_impression_id","/porpoiseant/tangerine.gif")}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('/detroitchicago/wichita.js', '/detroitchicago/wichita.js?gcb=195-0&cb=12', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('/detroitchicago/raleigh.js', '/detroitchicago/raleigh.js?gcb=195-0&cb=7', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('/detroitchicago/vista.js', '/detroitchicago/vista.js?gcb=195-0&cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base href="https://www.loonapix.com/es/photo-art/"/>
+<title>Foto Arte y Deep Dream generador en línea</title>
+<meta name="description" content="Deep dream filtros convertir cualquier foto en arte en línea. Prisma app como efectos de foto."/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9ERZS4SVK0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9ERZS4SVK0');
+</script>
+
+<link rel="canonical" href="https://www.loonapix.com/es/photo-art/"/>
+<link rel="alternate" hreflang="en" href="https://www.loonapix.com/photo-art/"/>
+<link rel="alternate" hreflang="cs" href="https://www.loonapix.com/cz/photo-art/"/>
+<link rel="alternate" hreflang="fr" href="https://www.loonapix.com/fr/photo-art/"/>
+<link rel="alternate" hreflang="it" href="https://www.loonapix.com/it/photo-art/"/>
+<link rel="alternate" hreflang="lt" href="https://www.loonapix.com/lt/photo-art/"/>
+<link rel="alternate" hreflang="lv" href="https://www.loonapix.com/lv/photo-art/"/>
+<link rel="alternate" hreflang="nl" href="https://www.loonapix.com/nl/photo-art/"/>
+<link rel="alternate" hreflang="pt" href="https://www.loonapix.com/pt/photo-art/"/>
+<link rel="alternate" hreflang="ru" href="https://www.loonapix.com/ru/photo-art/"/>
+<link rel="alternate" hreflang="uk" href="https://www.loonapix.com/ua/photo-art/"/>
+<link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icons/android-icon-192x192.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
+<link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#5bbad5"/>
+<link rel="manifest" href="/img/icons/manifest.json"/>
+<meta name="msapplication-config" content="/img/icons/browserconfig.xml"/>
+<meta name="msapplication-TileColor" content="#ffffff"/>
+<meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png"/>
+<meta name="theme-color" content="#ffffff"/>
+<style type="text/css">/* @import url(https://fonts.googleapis.com/css?family=Montserrat&subset=latin,cyrillic,latin-ext); */@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed');html, body { margin: 0; padding: 0; font-family: verdana,arial,tahoma; text-align: center; height: 100%; }.group:after { content: ""; display: table; clear: both; }.content-wrapper { max-width: 1366px; text-align: left; position: relative; margin: 0 auto; }.filter-header { font-family: 'Roboto Condensed', sans-serif; font-size: 45px; color: #dddcdc; font-weight: normal; position: absolute; left: 10px; top: -90px; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); }.ads-sticky { width: 300px; height: 600px; margin: 5px 5px 5px 5px; vertical-align: top; position: absolute; padding-top: 5px; }.filters-wrapper { margin: 10px 0px 0px 10px; display: inline-block; }.filters-wrapper .ads { width: 96%; margin: 15px auto 10px auto; }.filters-wrapper .ads .ads-1 { width: 100%; height: auto; margin: 0px 0px 10px 0px; text-align: center; }.filters-wrapper .ads .ads-2 { width: 100%; height: auto; text-align: center; }.filters-wrapper .ads-3 { width: 99%; height: auto; text-align: center; margin-top: 10px; }.filters-wrapper .filters-list { width: 100%; text-align: center; }.filters-wrapper .filters-list .filter-preview { margin: 1px; display: inline-block; }.filters-wrapper .filters-list .filter-preview :hover { -webkit-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75); box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75); }.filters-wrapper .filters-list .filter-preview img { display:block; width: 290px; height: 290px; }.filters-wrapper #show-more { border: 1px solid #cce6e6; width: 96%; text-align:center; margin: 12px auto 0px auto; padding: 3px; height: 18px; cursor: pointer; visibility: hidden; color:#006666; font-size:15px; }.filters-wrapper #show-more:hover { border: 1px solid #90c5c5; }.filters-wrapper #show-more-preloader { width: 96%; margin: 12px auto 0px auto; text-align: center; display: none; height: 32px; }.filters-wrapper .filter-desc { width: 100%; font-size: 14px; color: #999999; margin-top: 10px; padding: 10px; box-sizing: border-box; text-indent: 20px; }.filters-wrapper .filter-desc h2 { font-weight: bold; font-size: 14px; padding: 0; margin: 0;}.adpush { display: none; position:fixed; width:100%; height: 150px; left: 0px; bottom: 0px; background-color: #14181f; border-top: 1px solid #f39e47; text-shadow: 0px 1px 0px #281e16; color: #f39e47; text-align: left; background-image: url('/img/design/bg_adpush.png'); background-repeat: no-repeat; background-position: 5% 10px; background-size: contain; padding-bottom: 20px; }.adpush #adpush-text { font-family: 'Montserrat', sans-serif; font-size: 35px; padding-top: 30px; padding-left: 20%; }.adpush #adpush-text:hover { text-shadow: 0px 0px 8px rgba(243, 158, 71, 1); }.adpush #adpush-notice { font-family: verdana; font-size: 15px; padding-left: 20%; }.adpush #adpush-notice:hover { text-shadow: 0px 0px 8px rgba(243, 158, 71, 1); }.adpush #adpush-close { z-index: 100; position: absolute; top: 5px; right: 5px; width: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; font-family: Arial; font-size: 14px; padding: 1px 5px 1px 6px; text-decoration: none; cursor: pointer; height: 16px; color: #f39e47; }.adpush #adpush-close:hover { border: 1px solid #f39e47; }.adpush .adpush-yes { cursor: pointer; }.adpush #adpush-yes { -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; font-size: 20px; padding: 2px 0 5px 0; color: #14181f; background-color: #f39e47; width: 150px; text-align: center; margin: 15px auto; }.adpush #adpush-yes:hover { -webkit-box-shadow: 0px 0px 24px 0px rgba(243,158,71,1); -moz-box-shadow: 0px 0px 24px 0px rgba(243,158,71,1); box-shadow: 0px 0px 24px 0px rgba(243,158,71,1); }~@media screen and (max-width: 1280px){ .filters-wrapper .filters-list .filter-preview img { width: 240px; height: 240px; }}@media screen and (max-width: 1024px){ .ads-sticky { display: none; } .filters-wrapper { margin: 10px 0px 0px 10px; } .filters-wrapper .filters-list .filter-preview img { width: 220px; height: 220px; } .filter-header { font-size: 30px; left: 10px; top: -70px; } .adpush { background-image: none; }}@media screen and (max-width: 720px){ .filters-wrapper .filters-list .filter-preview img { width: 220px; height: 220px; } .filter-header { font-size: 25px; left: 15px; top: -55px; } .adpush #adpush-text { padding-left: 0px; margin 0 auto; text-align: center; font-size: 25px; } .adpush #adpush-notice { padding-left: 0px; margin 0 auto; text-align: center; font-size: 12px; } }@media screen and (max-width: 480px){ .filters-wrapper .filters-list .filter-preview img { width: 200px; height: 200px; } .filter-header { font-size: 20px; left: 10px; top: -50px; } .filters-wrapper .ads { height: auto; } .filters-wrapper .ads .ads-2 { height: auto; } .filters-wrapper .ads .ads-1 { height: auto; } .adpush { padding-bottom: 0px; } .adpush #adpush-text { font-size: 20px; } .adpush #adpush-notice { font-size: 10px; }}@media screen and (max-width: 414px){ .filters-wrapper .filters-list .filter-preview img { width: 190px; height: 190px; }}@media screen and (max-width: 375px){ .filters-wrapper .filters-list .filter-preview img { width: 160px; height: 160px; }}@media screen and (max-width: 360px){ .filter-header { font-size: 14px; left: 10px; top: -35px; } .filters-wrapper .filters-list .filter-preview img { width: 160px; height: 160px; } .adpush #adpush-text { font-size: 15px; } .adpush #adpush-notice { display: none; }}@media screen and (max-width: 320px){ .filters-wrapper .filters-list .filter-preview img { width: 290px; height: 290px; } .filters-wrapper .filters-list .filter-preview { margin-bottom: 8px;8px; }}.header-wrapper { max-width:1366px; margin: 0px auto; padding: 5px 0 0 0; position: relative; }.header-wrapper .logo-img { display: none; width: 110px; height: 33px; cursor: pointer; background: url(/img/design/logo_text.png) no-repeat; background-size: 110px 33px; }.header-wrapper .top-menu-icon { display: none; width: 34px; height: 20px; cursor: pointer; background: url(/img/design/menu_icon.png) no-repeat; }.header-wrapper .top-menu-close-icon { position: absolute;right: 15px;top: 10px;z-index: 11000;font-size: 20px;font-weight: bold;color: #fff; display: none; cursor: pointer; }.header-wrapper .top-menu-wrapper { position: relative; width: 100%; margin-top: 0px; }.header-wrapper .top-menu-wrapper .top-menu-bg-img { max-width: 100%; height: 200px; width: 1366px; background-color: #181c27; }.header-wrapper .top-menu-wrapper .top-menu { width: 100%; height: 32%; position: absolute; top: 30px; left: 0px; z-index: 1000; list-style-type:none; padding: 0; margin: 0; -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.75); box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.75); }.header-wrapper .top-menu-wrapper .top-menu li {list-style-type:none;}.header-wrapper .top-menu-wrapper .top-menu a{ text-decoration: none; }.header-wrapper .top-menu-wrapper .top-menu .top-menu-tabs-wrapper { margin: 0px; padding: 0px; height: 100%; }.top-menu-tabs { width: 16.66%; height: 100%; border-top: 2px solid rgba( 255, 255, 255, 0.7); border-bottom: 2px solid rgba( 255, 255, 255, 0.7); border-right: 2px solid rgba( 255, 255, 255, 0.7); box-sizing: border-box; padding: 2px 2px 2px 2px; float: left; cursor: pointer; }.top-menu-tabs .tab-inner { height: 100%; background: rgba( 255, 255, 255, 0.7); color: #444444; }.top-menu-tabs .tab-inner a{ color: #444444; }.top-menu-tabs .tab-inner-active { background: rgba( 255, 255, 255, 0.3); color: #fff; }.top-menu-tabs .tab-inner-inactive { color: #444444; }.top-menu-tabs .tab-inner-active a{ color: #fff; }.top-menu-tabs .tab-inner-text { position: relative; top: 50%; transform: translateY(-50%); font-size: 25px; text-align: center; }.top-menu-tabs .tab-inactive-right { border-right: 0; }.top-menu-tabs .tab-inner:hover { background: rgba( 255, 255, 255, 0.3); }.footer-wrapper { max-width:1366px; width: 100%; text-align: center; padding: 15px; box-sizing: border-box; font-size: 12px; color: #000; margin: 20px auto 0px auto; }.footer-wrapper p { margin: 5px;}.footer-wrapper .translated { padding:0px; margin:0px; font-size: 12px; color: #8b8989; }.top-menu-tabs-wrapper .tab-list { position: relative; }.top-menu-tabs-wrapper #tab-list-ai { text-align: left; line-height: 0.9; }.top-menu-tabs-wrapper #tab-list-ai .tab-inner span { font-size: 20px; }.top-menu-tabs-wrapper .tab-list .tab-list-options { position: absolute; text-align: left; width: 100%; font-size: 16px; top: 62px; left: 0px; }.top-menu-tabs-wrapper .tab-list #tab-list-options-ai { display: none; }.top-menu-tabs-wrapper .tab-list .tab-list-options .tab-list-option { padding: 20px; box-sizing: border-box; color: #373737; border-bottom: 2px solid rgba(199,199,199,0.7); border-right: 2px solid rgba(199,199,199,0.7); border-left: 2px solid rgba(199,199,199,0.7); background-color: rgb(242,242,242); }.top-menu-tabs-wrapper .tab-list .tab-list-options .tab-list-option:hover { background-color: rgba(255,255,255); color: #065454; }@media screen and (max-width: 1365px){ .top-menu-tabs .tab-inner-text { font-size: 18px; }}@media screen and (max-width: 1024px){ .top-menu-tabs .tab-inner-text { font-size: 15px; } .top-menu-tabs-wrapper #tab-list-ai .tab-inner span { font-size: 15px; } .top-menu-tabs-wrapper .tab-list .tab-list-options .tab-list-option { font-size: 14px; line-height: 1.4; padding: 15px; }}@media screen and (max-width: 720px){ .top-menu #tab-editor { display: none; } .header-wrapper { overflow: visible; padding: 0; position: static; } .header-wrapper .logo-img { display: block; position: absolute; z-index: 1000; top: 12px; left: 2.5%; } .header-wrapper .top-menu-icon { display: block; position: absolute; z-index: 1000; top: 15px; right: 2.5%; } .header-wrapper .top-menu-wrapper .top-menu { width: 100%; top: 0px; background: #172234; display: none; padding: 0; text-transform: uppercase; font-size: 14px; box-sizing: border-box; position: fixed; height: 100%; z-index: 10000; } .header-wrapper .top-menu-wrapper .top-menu .top-menu-tabs-wrapper { display: inline; } .header-wrapper .top-menu-wrapper .top-menu-bg-img { height: 150px; width: 720px;} .tab-active { background-color: rgb(68, 79, 98); } .top-menu-tabs .tab-inner:hover { background: none; } .top-menu-tabs { float: none; width: 100%; padding: 10px; border: none; display: inline-block; height: auto; border-bottom: 2px solid gray; } .top-menu-tabs:ative { background-color: rgba( 255, 255, 255, 0.3); } .top-menu-tabs:focus { background-color: rgba( 255, 255, 255, 0.3); } .top-menu-tabs .tab-inner { background: none; } .top-menu-tabs .tab-inner-active { background: none; } .top-menu-tabs .tab-inner-text { text-align: left; color: #ffffff; position: static; transform: none; padding: 5px 5px 5px 20px; } .header-wrapper .top-menu-wrapper .top-menu a{ color: #ffffff; } .top-menu-tabs-wrapper .tab-list .tab-list-options { position: initial; } .top-menu-tabs-wrapper .tab-list #tab-list-options-ai { display: block; } .top-menu-tabs-wrapper .tab-list .tab-list-options .tab-list-option { background-color: rgb(23, 34, 52); border: none; padding-left: 40px; padding-top: 15px; } .top-menu-tabs-wrapper .tab-list .tab-list-options .tab-list-option:hover { background: rgba( 255, 255, 255, 0.3); }}@media screen and (max-width: 480px){ .footer-wrapper { padding: 15px 5px 10px 5px; } .footer-wrapper .footer-menu p { display: block; margin: 10px 5px 10px 15px; }}@media screen and (max-width: 240px){ .footer-wrapper .footer-menu select { margin: 10px 10px 0 10px; }}.top-menu-wrapper .navigation {position: absolute; right: 0px; top: -30px; font-family:verdana;font-size:14px;} .top-menu-wrapper .navigation select {background-color: transparent; color: #fff; border: 0px; outline:0px; padding: 5px 10px;cursor:pointer;position:absolute;top:0;right:0;} .top-menu-wrapper .navigation select option{background-color: #fff; color:#000;} .top-menu-wrapper .navigation .other-links-button {color: #fff;display: inline-block; font-size: 18px; cursor:pointer; outline: 0px;position:absolute;right: 120px;top:-2px;} .top-menu-wrapper .navigation .other-links-menu {position: absolute;z-index: 10000;background-color: #fff;right: 30px;width: 200px;top:0px;padding: 5px 0 5px 0;border-radius: 5px; display:none; margin-top:30px;} .top-menu-wrapper .navigation .other-links-menu a {font-size: 14px;font-family: verdana;color: #000; text-decoration: none;} .top-menu-wrapper .navigation .other-links-menu #contact-us {cursor:pointer;} .top-menu-wrapper .navigation .other-links-menu div {padding: 5px;} .top-menu-wrapper .navigation .other-links-menu div:hover {background-color:#f5f2f2;} @media screen and (max-width: 720px){ .top-menu-wrapper .navigation { display: inline; position: static; } .top-menu-wrapper .navigation select { position: static; } .top-menu-wrapper .navigation .other-links-button { display: none; } .top-menu-wrapper .navigation .other-links-menu { position: static; display: block; background-color: transparent; color: #fff; text-align: left; margin: 10px; padding-left: 10px; } .top-menu-wrapper .navigation .other-links-menu a { color: #fff; } .top-menu-wrapper .navigation .other-links-menu div {padding: 10px;} .top-menu-wrapper .navigation .other-links-menu div:hover { background-color: inherit; } }</style>
+<meta property="og:url" content="http://www.loonapix.com/es/photo-art/"/>
+<meta property="og:title" content="Foto Arte y Deep Dream generador en línea"/>
+<meta property="og:description" content="Deep dream filtros convertir cualquier foto en arte en línea. Prisma app como efectos de foto."/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="https://www.loonapix.com/img/filter/preview_max/1579388616.jpg"/>
+
+<script type='text/javascript'>
+var ezoTemplate = 'pub_site';
+var ezouid = '1';
+var ezoFormfactor = '1';
+</script><script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 100839;
+var ezdomain = 'loonapix.com';
+var ezoicSearchable = 1;
+</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>function create_ezolpl() {
+	var d = new Date();
+	d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
+	var expires = "expires=" + d.toUTCString();
+	__ez.ck.setByCat(
+	  "ezux_lpl_100839",
+	  new Date().getTime() +
+		"|" +
+		_ezaq.page_view_id +
+		"|" +
+		_ezaq.is_return_visitor +
+		"; " +
+		expires,
+	  "understand_audiences",
+	  false
+	);
+  }
+  function attach_ezolpl() {
+	if (document.readyState === "complete") {
+	  create_ezolpl();
+	  return;
+	}
+	window.addEventListener("load", create_ezolpl);
+  }  
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script><script>
+			var loadCmpVign = function() {
+				var ezAcceptBtn = document.getElementById('ez-accept-all');
+				if(typeof ezAcceptBtn != 'undefined' && ezAcceptBtn != null) {
+					ezAcceptBtn.addEventListener('click', () => {
+						var executeVignette = function () {
+							var vignetteConfig = {
+								enabled: true,
+								useVignetteLoader: false,
+								eventHandlerTest: false,
+							};
+							if(typeof window.newEzVignette == "function"){
+								this.vignette = window.newEzVignette(vignetteConfig);
+								this.vignette.handleClick();
+							} else {
+								setTimeout(executeVignette, 70);
+							}
+						}
+						executeVignette();
+					});
+				} else {
+					setTimeout(loadCmpVign, 70);
+				}
+			};
+
+			loadCmpVign();
+		  </script>
+<script type="text/javascript">var cmpIsOn = true;</script></head>
+<body><script>var ezCmpChangeLogId=353797;var ezCmpCacheBusterId=170</script><script src="https://the.gatekeeperconsent.com/v2/cmp.js?v=170" id="cmpjs" async="true"></script>
+<div style="width: 100%; height: 100%; position: fixed; z-index: 1000; background: rgba(255,255,255,0.9); display: none;">
+<div style="margin: 10% auto; font-size: 30px; text-align: center; color: #ce2222; padding: 30px;">
+<img src="https://cdn3.iconfinder.com/data/icons/cat-power-premium/120/cat_eyes-512.png" style="width: 150px; height: 150px;"/>
+<p style="background: #ffffff;">Sorry for the inconvenience, this service is unavailable now.</p>
+<div style="background: #ffffff; color: #2c2a2a; display:inline-block; padding: 15px; cursor: pointer; font-size: 20px; border: 1px solid gray; -webkit-box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.75); box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.75);" onclick="window.location=&#39;/&#39;;">Back to website</div>
+</div>
+</div>
+
+<header>
+<div class="header-wrapper">
+	<div class="logo-img"></div>
+	<div class="top-menu-icon"></div>
+	<div class="top-menu-close-icon">✖</div>
+	<div class="top-menu-wrapper">
+		<div class="top-menu-bg-img"></div>
+		<nav role="navigation" class="top-menu">
+		<ul class="top-menu-tabs-wrapper" itemscope="" itemtype="https://www.schema.org/SiteNavigationElement">
+			<li class="top-menu-tabs tab-inactive">
+				<div class="tab-inner"><div class="tab-inner-text">
+					<a itemprop="url" href="https://www.loonapix.com/es/"><span itemprop="name">Foto efectos</span></a>
+				</div></div>
+			</li>
+			<li class="top-menu-tabs tab-inactive">
+				<div class="tab-inner"><div class="tab-inner-text">
+					<a itemprop="url" href="https://www.loonapix.com/es/marcos-fotos/"><span itemprop="name">Marcos de fotos</span></a>
+				</div></div>
+			</li>
+			<li class="top-menu-tabs tab-active tab-list" id="tab-list-ai">
+				<div class="tab-inner tab-inner-active"><div class="tab-inner-text tab-inner-text-active tab-list-text">
+					<span itemprop="name">Inteligencia artificial</span>
+				</div></div>
+				<div class="tab-list-options" id="tab-list-options-ai">
+				    <div class="tab-list-option">
+				        <a itemprop="url" href="https://www.loonapix.com/es/transparent-background/"><span itemprop="name">Quitar fondo</span></a>
+				    </div>
+				    <div class="tab-list-option">
+				        <a itemprop="url" href="https://www.loonapix.com/es/photo-art/"><span itemprop="name">Foto Arte</span></a>
+				    </div>
+				</div>
+			</li>
+			<li class="top-menu-tabs tab-inactive">
+				<div class="tab-inner"><div class="tab-inner-text">
+					<a itemprop="url" href="https://www.loonapix.com/es/facer/"><span itemprop="name">Efectos caras</span></a>
+				</div></div>
+			</li>
+			<li class="top-menu-tabs tab-inactive">
+				<div class="tab-inner"><div class="tab-inner-text">
+					<a itemprop="url" href="https://www.loonapix.com/es/trimmer/"><span itemprop="name">Cortar foto</span></a>
+				</div></div>
+			</li>
+			<li class="top-menu-tabs tab-inactive-right" id="tab-editor">
+				<div class="tab-inner"><div class="tab-inner-text">
+					<a itemprop="url" href="https://www.loonapix.com/es/editor-de-fotos/"><span itemprop="name">Editor de Fotos</span></a>
+				</div></div>
+			</li>
+		</ul>
+        <div class="navigation">
+    <div class="other-links-button">...</div>
+    <div class="other-links-menu">
+		<div id="contact-us">Contáctenos</div>
+		<div><a href="/es/faq">FAQ</a></div>
+		<div><a href="/es/feedback">Regenerar</a></div>
+		<div><a href="/privacy.html">Privacidad</a></div>
+    </div>
+    <select>
+         <option value="/">English</option>
+         <option value="/es/" selected="">Español</option>
+         <option value="/pt/">Português</option>
+         <option value="/ua/">Українська</option>
+         <option value="/cz/">Čeština</option>
+         <option value="/fr/">Française</option>
+         <option value="/it/">Italiano</option>
+         <option value="/nl/">Nederlands</option>
+         <option value="/lv/">Latviešu</option>
+         <option value="/lt/">Lietuvių</option>
+         <option value="/ru/">Русский</option>
+    </select>
+</div>
+
+		</nav>
+	</div>
+	<div class="fb-like-button">
+		<div class="fb-like" data-href="https://www.facebook.com/LoonaPix/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false" data-colorscheme="dark"></div>
+	</div>
+</div>
+</header>
+
+<main><div class="content-wrapper"><h1 class="filter-header">Convertir foto a arte en línea</h1>
+<div class="filters-wrapper">
+	<div class="ads">
+		<div class="ads-1">
+			<!-- Ezoic - Top of page display  - top_of_page -->
+			<span id="ezoic-pub-ad-placeholder-112"></span>
+			<!-- End Ezoic - Top of page display  - top_of_page -->
+		</div>
+		<div class="ads-2">
+			<!-- Ezoic - Under Page Title Link  - under_page_title -->
+			<span id="ezoic-pub-ad-placeholder-113"></span>
+			<!-- End Ezoic - Under Page Title Link  - under_page_title -->
+		</div>
+	</div>
+	<div class="filters-list group">
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/21-inspired_by_grant_wood_1930/"> 
+				<img src="/img/filter/list/1579388616.jpg" alt="Foto efecto - Inspired by Grant Wood 1930"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/20-icy_mountains/"> 
+				<img src="/img/filter/list/1579388353.jpg" alt="Foto efecto - Icy mountains"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/19-inspired_by_roy_lichtenstein_1964/"> 
+				<img src="/img/filter/list/1579387888.jpg" alt="Foto efecto - Inspired by Roy Lichtenstein 1964"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/18-inspired_by_patrick_bailey/"> 
+				<img src="/img/filter/list/1579295714.jpg" alt="Foto efecto - Inspired by Patrick Bailey"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/17-inspired_by_antonio_bravo_2015/"> 
+				<img src="/img/filter/list/1579295026.jpg" alt="Foto efecto - Inspired by Antonio Bravo 2015"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/16-yellow_submarine/"> 
+				<img src="/img/filter/list/1579294257.jpg" alt="Foto efecto - Yellow submarine"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/15-expressive_eyes/"> 
+				<img src="/img/filter/list/1579293826.jpg" alt="Foto efecto - Expressive eyes"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/14-spring_on_the_coast/"> 
+				<img src="/img/filter/list/1578868223.jpg" alt="Foto efecto - Spring on the coast"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/13-iridescent_effect/"> 
+				<img src="/img/filter/list/1578866352.jpg" alt="Foto efecto - Iridescent effect"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/12-rising_sun/"> 
+				<img src="/img/filter/list/1562710489.jpg" alt="Foto efecto - Rising Sun"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/11-winter_morning/"> 
+				<img src="/img/filter/list/1562710247.jpg" alt="Foto efecto - Winter morning"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/10-pieces_of_happiness/"> 
+				<img src="/img/filter/list/1562709957.jpg" alt="Foto efecto - Pieces of happiness"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/9-volcanic_eruption_/"> 
+				<img src="/img/filter/list/1562709612.jpg" alt="Foto efecto - Volcanic eruption "/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/8-winter_sea/"> 
+				<img src="/img/filter/list/1562709406.jpg" alt="Foto efecto - Winter sea"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/7-happy_childhood/"> 
+				<img src="/img/filter/list/1562709208.jpg" alt="Foto efecto - Happy childhood"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/6-light_of_hope/"> 
+				<img src="/img/filter/list/1562708727.jpg" alt="Foto efecto - Light of hope"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/5-sunset_in_summer/"> 
+				<img src="/img/filter/list/1562708578.jpg" alt="Foto efecto - Sunset in summer"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/4-art_of_mosaic/"> 
+				<img src="/img/filter/list/1562708307.jpg" alt="Foto efecto - Art of mosaic"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/3-the_world_of_bright_colors/"> 
+				<img src="/img/filter/list/1562707835.jpg" alt="Foto efecto - The world of bright colors"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/2-colorful_sketch/"> 
+				<img src="/img/filter/list/1562706463.jpg" alt="Foto efecto - Colorful sketch"/>
+				</a>
+			</div>
+		
+			<div class="filter-preview">
+				<a href="/es/photo-art/1-ice_and_fire/"> 
+				<img src="/img/filter/list/1483889580.jpg" alt="Foto efecto - Ice and fire"/>
+				</a>
+			</div>
+		
+	</div>
+
+	<!--
+        <div id="show-more">ENSEÑAME MAS</div>
+	<div id="show-more-preloader"><img src="/img/design/preloader.gif" /></div>
+	-->
+
+	<div class="ads-3">
+		<!-- Ezoic - Top of page display  - top_of_page -->
+		
+		<!-- End Ezoic - Top of page display  - top_of_page -->
+	</div>
+
+	
+	<article>
+	<div class="filter-desc">
+		<h2>Sueño con filtros de foto Deep Dream</h2>
+		<p>Se ha iniciado la nueva época de la edición fotográfica. Conoce la edición de fotos basada en AI. Foto a la transformación del arte ahora tan fácil como nunca. ¿Usted pregunta cómo? Gracias a la inteligencia artificial y generadores en línea! Es posible que hayas oído antes sobre los efectos fotográficos de la aplicación Prisma, o los filtros fotográficos de Deep Dream, o pueden ser otros servicios similares. Todos ellos están basados en redes neuronales. Ahora LoonaPix.com también le ofrece las mejores plantillas para convertir su foto en arte. Todo lo que necesitas es subir tu foto, elegir la plantilla &#34;foto-a-arte&#34; y esperar varios segundos. El resultado puede exceder sus expectativas.</p>
+		<p>Entonces, ¿cómo hacer todos los Deep Dream y Prisma como filtros de fotos hacen su trabajo. El trabajo es hecho por la red neural capacitada, o simplemente diciendo, por la inteligencia artificial. Puede hacer magia y hacer cualquier foto se parece a una obra de artista famoso: Van Gogh, Picasso, etc Excepto los artistas LoonaPix.com también le ofrece plantillas artísticas que se parece a aceite paiting, mosaico y muchos otros.</p>
+	</div>
+	</article>
+	
+
+</div>
+
+<input type="hidden" id="page_num" value="1"/>
+<input type="hidden" id="lang" value="es"/>
+<input type="hidden" id="img-alt" value="Foto efecto"/>
+<input type="hidden" id="show-more-text" value="ENSEÑAME MAS"/>
+<input type="hidden" id="filters-on-page" value=""/>
+<input type="hidden" id="show-adpush" value=""/>
+
+
+<!--
+<div class="adpush">
+	<div id="adpush-close">×</div>
+	<div id="adpush-text" class="adpush-yes"></div>
+	<div id="adpush-notice" class="adpush-yes"></div>
+	<div id="adpush-yes" class="adpush-yes"></div>
+</div>
+-->
+<script>function initjs(){ $.getScript('/js/services/base.js', function(){ $.getScript('/js/services/ai/filter/main.js');}) }</script>
+<script src="/js/jquery-1.10.2.min.js" async="" onload="initjs()"></script>
+
+</div></main>
+<div class="footer-wrapper">
+    <p>Copyright © 2023 Loona Team  </p>
+    <p class="translated">
+    	
+    	 Translated by Celina Hernandez 
+    	
+    	
+    	
+    	
+    	
+    </p>
+</div>
+
+<script type="text/javascript" async="async">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-3046353-1', 'auto');
+ga('send', 'pageview');
+setTimeout("ga('send', 'event', 'page', 'view 5 seconds', 'filter', 1)", 5000 );
+setTimeout("ga('send', 'event', 'page', 'view 30 seconds', 'filter', 1)", 30000 );
+</script>
+
+<script type="text/javascript" src="/js/cookie_notice.js" async="async"></script>
+<div id="cookie-notice" style="width:100%; position: fixed; bottom: 0px; background: rgba(21,32,46,95%); color: #fffdc0; font-size: 13px; display: none;">
+	<div style="box-sizing: border-box; min-width: 200px; padding: 15px 0px 15px 20px; float: left; width: 85%; text-align: left; text-indent: 5px;">
+	We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners. <a href="/privacy.html" style="color:#fff;">See details</a>
+	
+	</div>
+	<div id="button-gotit" style="width: 10%;text-align: center;min-width: 150px;display: inline-block;margin: 10px auto;">
+		<div style="display: inline-block;background-color: #e5ff56;border-radius: 5px;padding: 5px 30px 5px 30px;color: #202b38;font-size:  14px;font-weight: bold; cursor: pointer;">Got it!</div>
+	</div>
+</div>
+
+<!--[selectrongo:done]--><div class="ezmob-footer ezoic-floating-bottom ezo_ad ezmob-footer-desktop" id="ezmobfooter"><center><span id="ezoic-pub-ad-placeholder-100"></span><span class="ezmob-footer-close-wrap" id="ezmob-footer-close" style="display: none;"><span class="ezmob-footer-close" onclick="__ez_close_anchor()" title="close"></span><span class="ezoicwhat"><img src="https://go.ezodn.com/utilcave_com/ezoic.png" title="ezoic" class="ezmob-anchor-img"/></span></span></center></div><script async src="https://g.ezodn.com/cmp/v2/v.js?v=4"></script><script>(function(){if(typeof document.body==='undefined'||document.body===null){return;}
+var attachEvent=function(element,evt,func){if(element.addEventListener){element.addEventListener(evt,func,false);}else{element.attachEvent("on"+evt,func);}};attachEvent(document.body,"ezVigImpression",function(e){if(typeof(_ezaq)!=="undefined"&&typeof e==="object"){__ez.pel.AddAndFire(e.slot,[(new __ezDotData(e.key,e.value))]);}});})();</script><script>window.__ez_vig_close_wrapper=function(closeFunc,urlAddition){closeFunc();var vc={"enabled":false,"useVignetteLoader":true,"fireEventName":"ezVigImpression","impressionSource":"anchor","urlAddition":"utm_content=anc-true","disableFloor":true,"eventHandlerTest":false};if(typeof urlAddition=='string'){vc.urlAddition=urlAddition;}
+var v=newEzVignette(vc);v.handleClick();};</script>
+<script>__ez.queue.addFile('/tardisrocinante/vitals.js', '/tardisrocinante/vitals.js?gcb=0&cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+<script>var _audins_dom="loonapix_com",_audins_did=100839;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezodn.com/detroitchicago/audins.js?cb=3");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.loonapix_com,DomainId.100839" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
+<script>__ez.queue.addFile('/beardeddragon/drake.js', '/beardeddragon/drake.js?gcb=0&cb=8', false, [], true, false, true, false);</script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+	
+		var setAllCookies = function() {
+			setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+			setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));    
+		};
+	
+		if (window.ezTcfConsent && window.ezTcfConsent.loaded) {
+			if (window.ezTcfConsent.understand_audiences) { 
+				setAllCookies();
+			}
+		} else if (typeof getEzConsentData === "function") {
+			getEzConsentData().then(function (ezTcfConsent) {
+				if (ezTcfConsent && ezTcfConsent.loaded) {
+					if (ezTcfConsent.understand_audiences) { 
+						setAllCookies();
+					}
+				} else {
+					console.error("cannot get ez consent data");
+					setAllCookies();
+				}
+			});
+		} else {
+			console.error("getEzConsentData is not a function");
+			setAllCookies();
+		}
+	
+	})();</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('/parsonsmaize/chanute.js', '/parsonsmaize/chanute.js?a=a&cb=9&dcb=195-0&shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('/porpoiseant/jellyfish.js', '/porpoiseant/jellyfish.js?a=a&cb=14&dcb=195-0&shcb=34', false, [], true, false, false, false);</script>
+<script>if(typeof _ezaq!=="undefined"&&typeof __ez=="object"&&typeof __ez.bit=="object"&&typeof __ezDotData=="function"){if("cookieDeprecationLabel"in navigator){navigator.cookieDeprecationLabel.getValue().then((label)=>{__ez.bit.AddAndFire(_ezaq["page_view_id"],[new __ezDotData("chrome_cookie_deprecation_label",label),]);});}}</script><script data-cfasync="false">function _emitEzConsentEvent(){var customEvent=new CustomEvent("ezConsentEvent",{detail:{ezTcfConsent:window.ezTcfConsent},bubbles:true,cancelable:true,});document.dispatchEvent(customEvent);}
+(function(window,document){function _setAllEzConsentTrue(){window.ezTcfConsent.loaded=true;window.ezTcfConsent.store_info=true;window.ezTcfConsent.develop_and_improve_services=true;window.ezTcfConsent.measure_ad_performance=true;window.ezTcfConsent.measure_content_performance=true;window.ezTcfConsent.select_basic_ads=true;window.ezTcfConsent.create_ad_profile=true;window.ezTcfConsent.select_personalized_ads=true;window.ezTcfConsent.create_content_profile=true;window.ezTcfConsent.select_personalized_content=true;window.ezTcfConsent.understand_audiences=true;window.ezTcfConsent.use_limited_data_to_select_content=true;window.ezTcfConsent.select_personalized_content=true;}
+function _clearEzConsentCookie(){document.cookie="ezCMPCookieConsent=tcf2;Domain=.loonapix.com;Path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT";}
+_clearEzConsentCookie();if(typeof window.__tcfapi!=="undefined"){window.ezgconsent=false;var amazonHasRun=false;function _ezAllowed(tcdata,purpose){return(tcdata.purpose.consents[purpose]||tcdata.purpose.legitimateInterests[purpose]);}
+function _reloadAds(){if(typeof window.ezorefgsl==="function"&&typeof window.ezslots==="object"){if(typeof __ezapsFetchBids=="function"&&amazonHasRun===false){ezapsFetchBids(__ezaps);if(typeof __ezapsVideo!="undefined"){ezapsFetchBids(__ezapsVideo,"video");}
+amazonHasRun=true;}
+var slots=[];for(var i=0;i<window.ezslots.length;i++){if(window[window.ezslots[i]]&&typeof window[window.ezslots[i]]==="object"){slots.push(window[window.ezslots[i]]);}else{setTimeout(_reloadAds,100);return false;}}
+for(var i=0;i<slots.length;i++){window.ezorefgsl(slots[i]);}}else if(!window.ezadtimeoutset){window.ezadtimeoutset=true;setTimeout(_reloadAds,100);}}
+function _handleConsentDecision(tcdata){window.ezTcfConsent.loaded=true;if(!tcdata.vendor.consents["347"]&&!tcdata.vendor.legitimateInterests["347"]){window._emitEzConsentEvent();return;}
+window.ezTcfConsent.store_info=_ezAllowed(tcdata,"1");window.ezTcfConsent.develop_and_improve_services=_ezAllowed(tcdata,"10");window.ezTcfConsent.measure_content_performance=_ezAllowed(tcdata,"8");window.ezTcfConsent.select_basic_ads=_ezAllowed(tcdata,"2");window.ezTcfConsent.create_ad_profile=_ezAllowed(tcdata,"3");window.ezTcfConsent.select_personalized_ads=_ezAllowed(tcdata,"4");window.ezTcfConsent.create_content_profile=_ezAllowed(tcdata,"5");window.ezTcfConsent.measure_ad_performance=_ezAllowed(tcdata,"7");window.ezTcfConsent.use_limited_data_to_select_content=_ezAllowed(tcdata,"11");window.ezTcfConsent.select_personalized_content=_ezAllowed(tcdata,"6");window.ezTcfConsent.understand_audiences=_ezAllowed(tcdata,"9");window._emitEzConsentEvent();}
+function _handleGoogleConsentV2(tcdata){if(!tcdata||!tcdata.purpose||!tcdata.purpose.consents){return;}
+var googConsentV2={};if(tcdata.purpose.consents[1]){googConsentV2.ad_storage='granted';googConsentV2.analytics_storage='granted';}
+if(tcdata.purpose.consents[3]&&tcdata.purpose.consents[4]){googConsentV2.ad_personalization='granted';}
+if(tcdata.purpose.consents[1]&&tcdata.purpose.consents[7]){googConsentV2.ad_user_data='granted';}
+if(googConsentV2.analytics_storage=='denied'){gtag('set','url_passthrough',true);}
+gtag('consent','update',googConsentV2);}
+__tcfapi("addEventListener",2,function(tcdata,success){if(!success||!tcdata){window._emitEzConsentEvent();return;}
+if(!tcdata.gdprApplies){_setAllEzConsentTrue();window._emitEzConsentEvent();return;}
+if(tcdata.eventStatus==="useractioncomplete"||tcdata.eventStatus==="tcloaded"){if(typeof gtag!='undefined'){_handleGoogleConsentV2(tcdata);}
+_handleConsentDecision(tcdata);if(tcdata.purpose.consents["1"]===true&&tcdata.vendor.consents["755"]!==false){window.ezgconsent=true;(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;_reloadAds();}else{_reloadAds();}
+if(window.__ezconsent){__ezconsent.setEzoicConsentSettings(ezConsentCategories);}
+__tcfapi("removeEventListener",2,function(success){return null;},tcdata.listenerId);if(!(tcdata.purpose.consents["1"]===true&&_ezAllowed(tcdata,"2")&&_ezAllowed(tcdata,"3")&&_ezAllowed(tcdata,"4"))){if(typeof __ez=="object"&&typeof __ez.bit=="object"&&typeof window["_ezaq"]=="object"&&typeof window["_ezaq"]["page_view_id"]=="string"){__ez.bit.AddAndFire(window["_ezaq"]["page_view_id"],[new __ezDotData("non_personalized_ads",true),]);}}}});}else{_setAllEzConsentTrue();window._emitEzConsentEvent();}})(window,document);</script></body></html>
